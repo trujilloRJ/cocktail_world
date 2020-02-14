@@ -1,0 +1,17 @@
+$primary-color: #ffad6e;
+$focus-color: #ff8a00;
+$focus-color-start: #11998e;
+$max-width: 850px;
+$min-width: 400px;
+$mobile-width: 500px;
+$fs-h1: 1.6rem;
+$fs-h3: 1.2rem;
+$fs-small: 0.8rem;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return white;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../config";
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap");
+
+.card {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  padding: 0.5rem;
+  font-family: "Oswald", "Lato", sans-serif;
+  background: #fff;
+  img {
+    width: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__name {
+    font-size: $fs-h1;
+    color: $focus-color;
+  }
+  &__cat-glass {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+      font-size: $fs-small;
+      color: lighten($color: #000000, $amount: 40);
+    }
+  }
+  &__text {
+    width: 80%;
+    padding-top: 1rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-style: italic;
+  }
+  &__heading {
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+    color: $focus-color;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+  }
+  &__ingredients {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+
+    padding-top: 0rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    div {
+      font-size: $fs-small;
+      text-align: center;
+      padding: 0.3rem 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

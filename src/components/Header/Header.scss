@@ -1,0 +1,28 @@
+@import "../../config";
+
+.header {
+  width: 100%;
+  background: transparent;
+  padding: 0.5rem 0;
+  color: set-text-color($primary-color);
+  .nav {
+    &__hero {
+      display: flex;
+      align-items: center;
+      &__logo {
+        width: 40px;
+        img {
+          width: 100%;
+        }
+      }
+      &__name {
+        margin-left: 0.3rem;
+        font-size: $fs-h3;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+        color: $focus-color;
+      }
+    }
+  }
+}
