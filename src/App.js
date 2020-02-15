@@ -20,17 +20,6 @@ function App() {
   const [drinkData, setDrinkData] = useState("");
   const [drinkSelected, setDrinkSelected] = useState(false);
 
-  // useEffect(() => {
-  //   API_DRINK_LIST.get(query)
-  //     .then(res => {
-  //       console.log(res.data.drinks);
-  //       setResList(res.data.drinks);
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // }, []);
-
   useEffect(() => {
     API_DRINK_LIST.get(query)
       .then(res => {
